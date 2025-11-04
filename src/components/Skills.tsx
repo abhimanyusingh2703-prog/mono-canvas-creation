@@ -37,7 +37,7 @@ const Skills = () => {
                   <p className="text-xs text-muted-foreground tracking-wider mt-1">SKILLS</p>
                 </div>
                 <div>
-                  <p className="text-3xl font-display font-bold">3+</p>
+                  <p className="text-3xl font-display font-bold">1+</p>
                   <p className="text-xs text-muted-foreground tracking-wider mt-1">YEARS</p>
                 </div>
               </div>
