@@ -3,38 +3,38 @@ const Projects = () => {
     {
       title: "MAKEBOX",
       subtitle: "UX/UI and Product Design",
-      image: "https://mir-s3-cdn-cf.behance.net/projects/404/e4af90235479989.68e2f0d725df5.jpg",
+      image: "https://res.cloudinary.com/ddxt2bv5k/image/upload/v1763052022/Screenshot_2025-11-13_220257_jw4xvd.png",
       link: "https://www.behance.net/gallery/235479989/MAKEBOX-UXUI-and-Product-design",
       featured: true
     },
     {
       title: "INsync",
       subtitle: "Branding Project",
-      image: "https://mir-s3-cdn-cf.behance.net/projects/404/e9d0c8216297297.Y3JvcCw3MjEyLDU2NDEsMCwzMzIw.png",
+      image: "https://res.cloudinary.com/ddxt2bv5k/image/upload/v1763052022/Screenshot_2025-11-13_220325_xkofca.png",
       link: "https://www.behance.net/gallery/216297297/INsync-branding-project"
     },
     {
       title: "InvestEd",
       subtitle: "Branding Guidelines",
-      image: "https://mir-s3-cdn-cf.behance.net/projects/404/710018225403045.Y3JvcCw4NzUsNjg0LDEwNiww.jpg",
+      image: "https://res.cloudinary.com/ddxt2bv5k/image/upload/v1763052023/Screenshot_2025-11-13_220436_bcvq9j.png",
       link: "https://www.behance.net/gallery/225403045/InvestEd-branding-guidelines"
     },
     {
       title: "AFTERTHOUGHT",
       subtitle: "Brand Identity",
-      image: "https://mir-s3-cdn-cf.behance.net/projects/404/bc5a99175004669.Y3JvcCwxMTkyLDkzMywxMjQsMA.jpg",
+      image: "https://res.cloudinary.com/ddxt2bv5k/image/upload/v1763052023/Screenshot_2025-11-13_220615_ezyk3l.png",
       link: "https://www.behance.net/gallery/175004669/AFTERTHOUGHT-Brand-Identity"
     },
     {
       title: "FLORA",
       subtitle: "Typography",
-      image: "https://mir-s3-cdn-cf.behance.net/projects/404/024bf4183814961.65e488b58c5b5.jpg",
+      image: "https://res.cloudinary.com/ddxt2bv5k/image/upload/v1763052023/Screenshot_2025-11-13_220529_h1k7pn.png",
       link: "https://www.behance.net/gallery/183814961/FLORA-typography"
     },
     {
       title: "DIGITAL NARRATIVE",
       subtitle: "Visual Design",
-      image: "https://mir-s3-cdn-cf.behance.net/projects/404/a0e3cd225413459.Y3JvcCw2ODEsNTMyLDIwMywyNTg5.jpg",
+      image: "https://res.cloudinary.com/ddxt2bv5k/image/upload/v1763052024/Screenshot_2025-11-13_220643_tkylvz.png",
       link: "https://www.behance.net/gallery/225413459/DIGITAL-NARRATIVE"
     }
   ];
