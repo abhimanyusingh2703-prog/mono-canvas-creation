@@ -10,11 +10,8 @@ const Hero = () => {
               <p className="text-xs tracking-[0.3em] mb-4 text-muted-foreground uppercase">
                 Portfolio 2024
               </p>
-              <h1 className="font-display text-7xl md:text-8xl lg:text-[10rem] font-bold tracking-tighter leading-[0.85]">
-                ABHIMANYU
-              </h1>
-              <h1 className="font-display text-7xl md:text-8xl lg:text-[10rem] font-bold tracking-tighter leading-[0.85] -mt-2">
-                PANNU
+              <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter leading-[0.9]">
+                ABHIMANYU PANNU
               </h1>
             </div>
             
@@ -34,9 +31,11 @@ const Hero = () => {
             </div>
             
             <div className="space-y-6">
-              <p className="text-base text-muted-foreground font-light leading-relaxed">
-                Crafting meaningful digital experiences through UI/UX design, 
-                brand identity, and visual storytelling with a minimalist approach.
+              <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
+                A passionate creative designer specializing in UI/UX design, brand identity, 
+                and 3D modeling. Dedicated to crafting meaningful digital experiences through 
+                minimalist aesthetics and innovative visual storytelling. Proficient in Adobe 
+                Creative Suite, 3D modeling tools, and contemporary design methodologies.
               </p>
               
               <div className="flex gap-8 text-sm">
