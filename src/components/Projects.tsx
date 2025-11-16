@@ -1,3 +1,5 @@
+import { Box, Layers, GraduationCap, Sparkles } from "lucide-react";
+
 const Projects = () => {
   const projects = [
     {
@@ -5,37 +7,28 @@ const Projects = () => {
       subtitle: "UX/UI and Product Design",
       image: "https://res.cloudinary.com/ddxt2bv5k/image/upload/v1763052022/Screenshot_2025-11-13_220257_jw4xvd.png",
       link: "https://www.behance.net/gallery/235479989/MAKEBOX-UXUI-and-Product-design",
-      featured: true
+      icon: Box
     },
     {
       title: "INsync",
       subtitle: "Branding Project",
       image: "https://res.cloudinary.com/ddxt2bv5k/image/upload/v1763052022/Screenshot_2025-11-13_220325_xkofca.png",
-      link: "https://www.behance.net/gallery/216297297/INsync-branding-project"
+      link: "https://www.behance.net/gallery/216297297/INsync-branding-project",
+      icon: Layers
     },
     {
       title: "InvestEd",
       subtitle: "Branding Guidelines",
       image: "https://res.cloudinary.com/ddxt2bv5k/image/upload/v1763052023/Screenshot_2025-11-13_220436_bcvq9j.png",
-      link: "https://www.behance.net/gallery/225403045/InvestEd-branding-guidelines"
+      link: "https://www.behance.net/gallery/225403045/InvestEd-branding-guidelines",
+      icon: GraduationCap
     },
     {
       title: "AFTERTHOUGHT",
       subtitle: "Brand Identity",
       image: "https://res.cloudinary.com/ddxt2bv5k/image/upload/v1763052023/Screenshot_2025-11-13_220615_ezyk3l.png",
-      link: "https://www.behance.net/gallery/175004669/AFTERTHOUGHT-Brand-Identity"
-    },
-    {
-      title: "FLORA",
-      subtitle: "Typography",
-      image: "https://res.cloudinary.com/ddxt2bv5k/image/upload/v1763052023/Screenshot_2025-11-13_220529_h1k7pn.png",
-      link: "https://www.behance.net/gallery/183814961/FLORA-typography"
-    },
-    {
-      title: "DIGITAL NARRATIVE",
-      subtitle: "Visual Design",
-      image: "https://res.cloudinary.com/ddxt2bv5k/image/upload/v1763052024/Screenshot_2025-11-13_220643_tkylvz.png",
-      link: "https://www.behance.net/gallery/225413459/DIGITAL-NARRATIVE"
+      link: "https://www.behance.net/gallery/175004669/AFTERTHOUGHT-Brand-Identity",
+      icon: Sparkles
     }
   ];
 
@@ -59,49 +52,53 @@ const Projects = () => {
           </p>
         </div>
         
-        <div className="space-y-24">
-          {projects.map((project, index) => (
-            <a
-              key={project.title}
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`group block ${project.featured ? 'md:pr-0' : index % 2 === 0 ? 'md:pr-24' : 'md:pl-24'}`}
-            >
-              <div className="grid md:grid-cols-12 gap-8 items-center">
-                <div className={`md:col-span-8 ${index % 2 === 0 ? 'md:order-1' : 'md:order-2'} ${project.featured ? 'md:col-span-9' : ''}`}>
-                  <div className="aspect-[16/10] bg-muted overflow-hidden relative">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+          {projects.map((project, index) => {
+            const Icon = project.icon;
+            return (
+              <a
+                key={project.title}
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+              >
+                <div className="space-y-6">
+                  <div className="aspect-[4/3] bg-muted overflow-hidden relative">
                     <img 
                       src={project.image} 
                       alt={project.title}
-                      className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 group-hover:brightness-90"
+                      className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 border border-foreground opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-background/0 group-hover:bg-background/10 transition-all duration-300" />
+                    
+                    <div className="absolute top-6 right-6 w-16 h-16 bg-background border border-border flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:scale-110">
+                      <Icon className="w-8 h-8" strokeWidth={1.5} />
+                    </div>
                   </div>
-                </div>
-                
-                <div className={`md:col-span-4 space-y-4 ${index % 2 === 0 ? 'md:order-2' : 'md:order-1'} ${project.featured ? 'md:col-span-3' : ''}`}>
-                  <div className="space-y-2">
-                    <p className="text-xs tracking-widest text-muted-foreground">
-                      {String(index + 1).padStart(2, '0')}
-                    </p>
-                    <h3 className="font-display text-3xl md:text-4xl font-bold group-hover:text-muted-foreground transition-colors">
+                  
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <p className="text-xs tracking-widest text-muted-foreground">
+                        {String(index + 1).padStart(2, '0')}
+                      </p>
+                      <span className="text-xs tracking-widest text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity">
+                        VIEW →
+                      </span>
+                    </div>
+                    
+                    <h3 className="font-display text-2xl md:text-3xl font-bold tracking-tight group-hover:text-muted-foreground transition-colors">
                       {project.title}
                     </h3>
-                  </div>
-                  
-                  <p className="text-sm text-muted-foreground tracking-wide leading-relaxed">
-                    {project.subtitle}
-                  </p>
-                  
-                  <div className="flex items-center gap-2 pt-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <span className="text-xs tracking-widest uppercase">View Project</span>
-                    <span className="text-sm">→</span>
+                    
+                    <p className="text-sm text-muted-foreground tracking-wide">
+                      {project.subtitle}
+                    </p>
                   </div>
                 </div>
-              </div>
-            </a>
-          ))}
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>
