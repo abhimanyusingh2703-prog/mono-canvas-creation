@@ -33,9 +33,9 @@ const Projects = () => {
   ];
 
   return (
-    <section id="work" className="min-h-screen px-6 md:px-12 lg:px-24 py-32 relative">
+    <section id="work" className="min-h-screen px-6 md:px-12 lg:px-24 py-16 md:py-20 relative">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-24 flex items-end justify-between">
+        <div className="mb-16 flex items-end justify-between">
           <div>
             <div className="flex items-center gap-6 mb-4">
               <div className="h-px w-12 bg-foreground" />
