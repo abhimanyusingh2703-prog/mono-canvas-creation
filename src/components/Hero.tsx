@@ -17,7 +17,7 @@ const Hero = () => {
                 ABHIMANYU PANNU
               </h1>
               <p className="text-2xl md:text-3xl font-light tracking-wide leading-tight mb-8">
-                Student Creative Designer
+                Creative Designer
               </p>
               
               <div className="flex items-center gap-6 mb-8">
