@@ -70,7 +70,7 @@ const Hero = () => {
         </div>
       </div>
       
-      <div className="absolute bottom-8 right-6 md:right-12 lg:right-24 text-xs tracking-[0.3em] text-muted-foreground uppercase rotate-90 origin-right">
+      <div className="absolute bottom-8 right-6 md:right-12 lg:right-24 text-xs tracking-[0.3em] text-muted-foreground uppercase rotate-90 origin-right mx-0">
         Scroll
       </div>
     </section>;
