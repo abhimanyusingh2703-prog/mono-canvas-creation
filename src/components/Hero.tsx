@@ -40,7 +40,7 @@ const Hero = () => {
             </div>
             
             <div className="space-y-8 max-w-lg">
-              <p className="text-base leading-relaxed font-sans md:text-xl font-normal text-left text-zinc-600 px-[5px] py-0 my-0 mx-[2px]">A multidisciplinary designer focused on UI/UX, branding, illustration, and graphic design.
+              <p className="text-base leading-relaxed md:text-xl font-normal text-left text-zinc-600 py-0 my-0 mx-[2px] font-sans px-0">A multidisciplinary designer focused on UI/UX, branding, illustration, and graphic design.
 I create intuitive interfaces and expressive visuals that turn ideas into meaningful experiences.
 Driven by a long-term aspiration to become a creative director, I’m constantly exploring design strategy, visual storytelling, and innovative thinking to shape more impactful creative work.</p>
               
