@@ -45,7 +45,7 @@ const Hero = () => {
           </div>
           
           {/* Right Column - Mockup Image */}
-          <div className="relative lg:h-[600px] h-[400px] animate-fade-in">
+          <div className="relative lg:h-[800px] h-[500px] animate-fade-in">
             <div className="absolute inset-0 flex items-end justify-end">
               <img alt="Creative Design Mockup" className="w-full h-full object-contain object-right-bottom" src="/lovable-uploads/a73d9fa5-c689-4c0a-829d-9ccace66c91d.png" />
             </div>
