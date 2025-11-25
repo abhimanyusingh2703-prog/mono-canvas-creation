@@ -35,16 +35,14 @@ const Hero = () => {
               
               <div className="flex items-center gap-6 pt-4">
                 <div className="h-px w-20 bg-foreground" />
-                <div className="h-16 w-px bg-border" />
+                
               </div>
             </div>
             
             <div className="space-y-8 max-w-lg">
-              <p className="text-base md:text-lg text-muted-foreground font-light leading-relaxed">
-                A passionate creative designer specializing in UI/UX design, brand identity, 
-                and 3D modeling. Dedicated to crafting meaningful digital experiences through 
-                minimalist aesthetics and innovative visual storytelling.
-              </p>
+              <p className="text-base leading-relaxed font-sans md:text-xl font-normal text-left text-zinc-600 px-[5px] py-0 my-0 mx-0">A multidisciplinary designer focused on UI/UX, branding, illustration, and graphic design.
+I create intuitive interfaces and expressive visuals that turn ideas into meaningful experiences.
+Driven by a long-term aspiration to become a creative director, I’m constantly exploring design strategy, visual storytelling, and innovative thinking to shape more impactful creative work.</p>
               
               <div className="flex gap-16 pt-2">
                 <div className="space-y-1">
