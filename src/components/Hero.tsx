@@ -64,7 +64,7 @@ const Hero = () => {
             <div style={{
             transform: `translateY(${parallaxOffset}px)`
           }} className="absolute inset-0 transition-transform duration-100 ease-out py-0 px-[22px] my-0 mx-0 flex items-center justify-end">
-              <img alt="Creative Design Mockup showcasing UI/UX work on laptop and mobile devices" src="/lovable-uploads/a73d9fa5-c689-4c0a-829d-9ccace66c91d.png" className="w-full h-full object-center-right object-cover border-slate-50 shadow-none rounded-none opacity-100" />
+              <img alt="Creative Design Mockup showcasing UI/UX work on laptop and mobile devices" src="/lovable-uploads/a73d9fa5-c689-4c0a-829d-9ccace66c91d.png" className="w-full h-full object-center-right object-cover border-slate-50 opacity-90 shadow-2xl rounded-3xl" />
             </div>
           </div>
         </div>
