@@ -1,8 +1,6 @@
 import heroMockup from "@/assets/hero-mockup.jpg";
-
 const Hero = () => {
-  return (
-    <section className="min-h-screen px-6 md:px-12 lg:px-24 py-24 md:py-32 relative overflow-hidden noise flex items-end">
+  return <section className="min-h-screen px-6 md:px-12 lg:px-24 py-24 md:py-32 relative overflow-hidden noise flex items-end">
       <div className="absolute inset-0 grid-pattern opacity-30" />
       
       <div className="max-w-7xl mx-auto relative z-10 w-full pb-16">
@@ -49,11 +47,7 @@ const Hero = () => {
           {/* Right Column - Mockup Image */}
           <div className="relative lg:h-[600px] h-[400px] animate-fade-in">
             <div className="absolute inset-0 flex items-end justify-end">
-              <img 
-                src={heroMockup} 
-                alt="Creative Design Mockup" 
-                className="w-full h-full object-contain object-right-bottom"
-              />
+              <img alt="Creative Design Mockup" className="w-full h-full object-contain object-right-bottom" src="/lovable-uploads/a73d9fa5-c689-4c0a-829d-9ccace66c91d.png" />
             </div>
           </div>
         </div>
@@ -62,8 +56,6 @@ const Hero = () => {
       <div className="absolute bottom-12 right-6 md:right-12 lg:right-24 text-xs tracking-widest text-muted-foreground uppercase rotate-90 origin-right">
         Scroll
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
