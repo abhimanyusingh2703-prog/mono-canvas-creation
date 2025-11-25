@@ -1,9 +1,9 @@
 import heroMockup from "@/assets/hero-mockup.jpg";
 const Hero = () => {
-  return <section className="min-h-screen px-6 md:px-12 lg:px-24 py-24 md:py-32 relative overflow-hidden noise flex items-end">
+  return <section className="min-h-screen px-6 md:px-12 lg:px-24 py-16 md:py-20 relative overflow-hidden noise flex items-end">
       <div className="absolute inset-0 grid-pattern opacity-30" />
       
-      <div className="max-w-7xl mx-auto relative z-10 w-full pb-16">
+      <div className="max-w-7xl mx-auto relative z-10 w-full pb-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-end">
           {/* Left Column - Content */}
           <div className="space-y-8 animate-fade-in">
