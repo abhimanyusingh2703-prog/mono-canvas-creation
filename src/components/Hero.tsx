@@ -1,22 +1,16 @@
 import heroMockup from "@/assets/hero-mockup.jpg";
 import { useEffect, useState } from "react";
-
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
-
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   const parallaxOffset = scrollY * 0.3;
-
-  return (
-    <section className="min-h-screen px-6 md:px-12 lg:px-24 py-20 md:py-24 relative overflow-hidden noise flex items-center">
+  return <section className="min-h-screen px-6 md:px-12 lg:px-24 py-20 md:py-24 relative overflow-hidden noise flex items-center">
       <div className="absolute inset-0 grid-pattern opacity-30" />
       
       <div className="max-w-7xl mx-auto relative z-10 w-full">
@@ -67,15 +61,10 @@ const Hero = () => {
           
           {/* Right Column - Mockup Image */}
           <div className="relative h-[500px] lg:h-[700px] animate-fade-in">
-            <div 
-              className="absolute inset-0 flex items-center justify-end transition-transform duration-100 ease-out"
-              style={{ transform: `translateY(${parallaxOffset}px)` }}
-            >
-              <img 
-                alt="Creative Design Mockup showcasing UI/UX work on laptop and mobile devices" 
-                className="w-full h-full object-contain object-center-right" 
-                src="/lovable-uploads/a73d9fa5-c689-4c0a-829d-9ccace66c91d.png" 
-              />
+            <div className="absolute inset-0 flex items-center justify-end transition-transform duration-100 ease-out" style={{
+            transform: `translateY(${parallaxOffset}px)`
+          }}>
+              <img alt="Creative Design Mockup showcasing UI/UX work on laptop and mobile devices" src="/lovable-uploads/a73d9fa5-c689-4c0a-829d-9ccace66c91d.png" className="w-full h-full object-center-right object-cover border-slate-50 rounded-2xl shadow-none opacity-90" />
             </div>
           </div>
         </div>
@@ -84,7 +73,6 @@ const Hero = () => {
       <div className="absolute bottom-8 right-6 md:right-12 lg:right-24 text-xs tracking-[0.3em] text-muted-foreground uppercase rotate-90 origin-right">
         Scroll
       </div>
-    </section>
-  );
+    </section>;
 };
 export default Hero;
