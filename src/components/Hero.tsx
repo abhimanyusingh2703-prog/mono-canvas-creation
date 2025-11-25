@@ -1,6 +1,20 @@
 import heroMockup from "@/assets/hero-mockup.jpg";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const parallaxOffset = scrollY * 0.3;
+
   return (
     <section className="min-h-screen px-6 md:px-12 lg:px-24 py-20 md:py-24 relative overflow-hidden noise flex items-center">
       <div className="absolute inset-0 grid-pattern opacity-30" />
@@ -53,7 +67,10 @@ const Hero = () => {
           
           {/* Right Column - Mockup Image */}
           <div className="relative h-[500px] lg:h-[700px] animate-fade-in">
-            <div className="absolute inset-0 flex items-center justify-end">
+            <div 
+              className="absolute inset-0 flex items-center justify-end transition-transform duration-100 ease-out"
+              style={{ transform: `translateY(${parallaxOffset}px)` }}
+            >
               <img 
                 alt="Creative Design Mockup showcasing UI/UX work on laptop and mobile devices" 
                 className="w-full h-full object-contain object-center-right" 
