@@ -19,7 +19,7 @@ const Navigation = () => {
             Contact
             <span className="absolute -bottom-1 left-0 w-0 h-px bg-foreground group-hover:w-full transition-all duration-300" />
           </a>
-           <a href="https://drive.google.com/file/d/1NBkgQzsVyGFyyd3ZuIoKjVTQcLV5P5_Y/view?usp=sharing" className="hover:text-muted-foreground transition-colors relative group">
+           <a href="https://drive.google.com/file/d/1XsUVMx0fqKvNkyVP8QoiTOz60SvNqjjI/view?usp=sharing" className="hover:text-muted-foreground transition-colors relative group">
             Resume
             <span className="absolute -bottom-1 left-0 w-0 h-px bg-foreground group-hover:w-full transition-all duration-300" />
           </a>
